@@ -69,3 +69,9 @@ table {
 }
 
 /* -------- GLOBAL STYLES (mobile-first/small 414px:) ----- */
+
+/* From top to bottom:*/
+html {
+    background-color: rgba(122,191,191,.5);
+}
+
