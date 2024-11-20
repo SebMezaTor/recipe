@@ -218,11 +218,19 @@ h3 {
     font-weight: normal;
 }
 
+.details dl{
+    margin: 0;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 5px 20px;
+    
+}
 
 /* Ingredients styles */
 
 .ingredients h2 {
     text-align: center;
+    padding: 7px;
 }
 
 .ingredients li {
@@ -286,11 +294,10 @@ footer ul {
     justify-content: space-between;
     padding-bottom: 15px;
 }
-
+/* The only way I was able to center the footer image was by making the width be 100% of the content and adjust the height to auto.*/
 footer img {
     width: 100%;
     height: auto;
-    
 }
 
 footer p {
@@ -298,4 +305,4 @@ footer p {
     font-weight: 700;
 }
 
-/* Before proceeding to the media query of 768px, try to fix the hamburger menu logo, its blocking the header tag, and fix the aside section. */
+/* Before proceeding to the media query of 768px, try to fix the hamburger menu logo, its blocking the header tag, fix the direction ordered list, fix the details dl list, and fix the aside section. */
