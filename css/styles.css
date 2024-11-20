@@ -236,7 +236,7 @@ h3 {
 .ingredients li {
     list-style-type: square;
     padding: 6px;
-    margin-left: 17px;
+    margin-left: 20px;
 }
 
 /* Directions styles */
@@ -249,12 +249,18 @@ h3 {
     padding: 6px;
 }
 
+.directions li {
+     list-style: decimal-leading-zero;
+     margin-left: 40px;
+}
+/* For the ordered list, I couldn't seem to find the standard number list. I resorted to the decimal leading zero to take its place for now. */
+
 main p {
     padding: 10px;
     
 }
 
-/* The aside styles */
+/* The aside section styles */
 aside {
     background-color: #7ABFBF;
 }
@@ -279,6 +285,11 @@ aside figcaption {
     text-align: right;
     margin-right: 10px;
 
+}
+
+/* This class targets the ratings for the aside content. */
+.icon-tabler-star {
+    fill: orangered;
 }
 
 /* ---- Styles for the footer ---- */
