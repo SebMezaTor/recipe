@@ -86,6 +86,7 @@ main {
 }
 
 /* ---- Header styles ----- */
+/* The SVG icons also have a hover element to them.*/
 header {
     text-align: center;
 }
@@ -113,13 +114,15 @@ header img {
 }
 
 /* ---- Navigation styles ---- */
-
+/* The original min width for the nav was 414px */
+/* For the nav element, the position was "fixed". I changed it to absolute position to closely resemble the Loom video.*/
+/* The navigation links are orange in the Loom video, currently they're blue.*/
 nav {
     grid-area: nav;
-    min-width: 414px;
+    min-width: 10px;
     background-color: #ffffff;
     box-shadow: 0px 3px 3px #bbb;
-    position: fixed;
+    position: absolute;
     top: 0;
     z-index: 5;
 }
@@ -141,6 +144,7 @@ nav li a {
     display: block;
     padding: 20px;
     text-decoration: none;
+    color: #EB5428;
 }
 
 nav label {
@@ -261,31 +265,57 @@ main p {
 }
 
 /* The aside section styles */
+/* Note: the aside section has an orange hover element to it. I tried using the orange palate from the tips and hints but it didn't really match the color from the Loom video, the closest color to it was the hex code #e8ad0c;*/
+/* In the Loom video, I think the transition is set to .5s rather than 1s, I will just stick with .5s for now.*/
+/* Figcaption is the caption for the image.*/
+
 aside {
     background-color: #7ABFBF;
 }
 
-aside img {
-    width: 50%;
-}
-
 aside h2 {
+    padding: 10px;
     text-align: center;
     margin: 0;
-    padding: 10px;
 }
 
+aside h3 {
+    grid-column: 2;
+    grid-row: 1;
+
+}
 
 aside figure {
     display: grid;
-    margin: 10px;
-}
-/* (Note: the figcaption would be the caption for the description of the image.) */
-aside figcaption {
-    text-align: right;
-    margin-right: 10px;
+    transition: background-color 5s;
+    grid-template-columns: 130px 1fr;
+    grid-template-rows: .15fr .3fr 50px;
+    margin: 5px;
 
 }
+
+aside figure:hover {
+    background-color: #e8ad0c;
+    color: #000000;
+}
+
+aside figcaption {
+    height: fit-content;
+    grid-row: 2;
+    grid-column: 2;
+}
+
+aside img {
+    width: 100%;
+    
+}
+
+aside dt {
+    grid-column: 2;
+    grid-row: 3;
+    display: block;
+}
+
 
 /* This class targets the ratings for the aside content. */
 .icon-tabler-star {
@@ -293,6 +323,7 @@ aside figcaption {
 }
 
 /* ---- Styles for the footer ---- */
+/* The social media links have a hover element to them as well. */
 
 footer {
     font-family: 'Bebas Neue';
@@ -305,6 +336,7 @@ footer ul {
     justify-content: space-between;
     padding-bottom: 15px;
 }
+
 /* The only way I was able to center the footer image was by making the width be 100% of the content and adjust the height to auto.*/
 footer img {
     width: 100%;
