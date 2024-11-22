@@ -268,53 +268,47 @@ main p {
 /* Note: the aside section has an orange hover element to it. I tried using the orange palate from the tips and hints but it didn't really match the color from the Loom video, the closest color to it was the hex code #e8ad0c;*/
 /* In the Loom video, I think the transition is set to .5s rather than 1s, I will just stick with .5s for now.*/
 /* Figcaption is the caption for the image.*/
-
 aside {
     background-color: #7ABFBF;
 }
 
 aside h2 {
-    padding: 10px;
     text-align: center;
-    margin: 0;
+    padding: 10px;
 }
 
-aside h3 {
-    grid-column: 2;
-    grid-row: 1;
-
-}
-
-aside figure {
+.dishes-grid {
     display: grid;
-    transition: background-color 5s;
-    grid-template-columns: 130px 1fr;
-    grid-template-rows: .15fr .3fr 50px;
-    margin: 5px;
+    grid-template-columns: 1fr;
+    gap: 15px;
 
 }
 
-aside figure:hover {
-    background-color: #e8ad0c;
-    color: #000000;
+.dish {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: 15px;
+    align-items: center;
 }
 
-aside figcaption {
-    height: fit-content;
-    grid-row: 2;
-    grid-column: 2;
-}
-
-aside img {
-    width: 100%;
+.dish img {
+    width: 80%;
+    object-fit: cover;
     
 }
 
-aside dt {
-    grid-column: 2;
-    grid-row: 3;
-    display: block;
+.side-dishes {
+    padding: 5px;
+    margin: 0 auto;
+
 }
+
+.dish:hover {
+    background-color: #e8ad0c;
+    color: #000000;
+    transition: background-color .5s;
+}
+
 
 
 /* This class targets the ratings for the aside content. */
