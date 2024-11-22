@@ -331,6 +331,13 @@ footer ul {
     padding-bottom: 15px;
 }
 
+footer li:hover {
+    background-color: #e8ad0c;
+    color: #ffffff;
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+
 /* The only way I was able to center the footer image was by making the width be 100% of the content and adjust the height to auto.*/
 footer img {
     width: 100%;
@@ -341,5 +348,6 @@ footer p {
     text-align: center;
     font-weight: 700;
 }
+
 
 /* Before proceeding to the media query of 768px, try to fix the hamburger menu logo, its blocking the header tag, fix the direction ordered list, fix the details dl list, and fix the aside section. */
