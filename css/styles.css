@@ -87,8 +87,11 @@ main {
 
 /* ---- Header styles ----- */
 /* The SVG icons also have a hover element to them.*/
+/* Added a padding top to make room for the search bar. */
 header {
     text-align: center;
+    padding-top: 130px;
+    
 }
 
 h1 {
@@ -111,6 +114,17 @@ menu {
 
 header img {
     width: 100%;
+}
+
+.svg-menu-links a {
+    text-decoration: none;
+    color: #EB5428;
+    transition: background-color 1s;
+}
+
+.svg-menu-links li a:hover {
+    background-color: #EB5428;
+    color: #ffffff;
 }
 
 /* ---- Navigation styles ---- */
@@ -309,12 +323,37 @@ aside h2 {
     transition: background-color .5s;
 }
 
-
-
 /* This class targets the ratings for the aside content. */
 .icon-tabler-star {
     fill: orangered;
 }
+/* Styles for the search bar */
+.search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    position: absolute;
+    top: 70px;
+
+}
+
+.search-bar input {
+    width: 250px;
+    padding: 9px;
+    border: 2px solid #EB5428;
+    border-radius: 3px;
+}
+
+.search-bar button {
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+
 
 /* ---- Styles for the footer ---- */
 /* The social media links have a hover element to them as well. */
@@ -350,4 +389,4 @@ footer p {
 }
 
 
-/* Before proceeding to the media query of 768px, try to fix the hamburger menu logo, its blocking the header tag, fix the direction ordered list, fix the details dl list, and fix the aside section. */
+/* Before proceeding to the media query of 768px, try to fix the hamburger menu logo, its blocking the header tag, fix the direction ordered list, fix the details dl list, fix the aside section, and add the home logo and sign in logos at the top of the header. */
