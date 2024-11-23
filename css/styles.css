@@ -115,7 +115,7 @@ menu {
 header img {
     width: 100%;
 }
-
+/* This style is for the save, share, print, and jump to recipe SVG's. */
 .svg-menu-links a {
     text-decoration: none;
     color: #EB5428;
@@ -125,6 +125,26 @@ header img {
 .svg-menu-links li a:hover {
     background-color: #EB5428;
     color: #ffffff;
+}
+/* This style is for the logo for the project. */
+#logo {
+    background-color: #EB5428;
+    min-width: 100%;
+    display: flex;
+    position: absolute;
+    top: 2px;
+    left: 128px;
+    padding: 3px;
+}
+
+#sign-in {
+    display: flex;
+    position: absolute;
+    top: 2px;
+    left: 263px;
+    padding: 10px;
+    min-width: 100%;
+    
 }
 
 /* ---- Navigation styles ---- */
@@ -159,6 +179,12 @@ nav li a {
     padding: 20px;
     text-decoration: none;
     color: #EB5428;
+}
+/*Added the nav li a:hover element, if anything goes wrong delete it. */
+nav li a:hover {
+    background-color: #EB5428;
+    color: #ffffff;
+    transition: background-color .5s;
 }
 
 nav label {
@@ -389,4 +415,4 @@ footer p {
 }
 
 
-/* Before proceeding to the media query of 768px, try to fix the hamburger menu logo, its blocking the header tag, fix the direction ordered list, fix the details dl list, fix the aside section, and add the home logo and sign in logos at the top of the header. */
+/* Before proceeding to the medium viewport media query of 768px, try to fix the hamburger menu logo, its blocking the header tag, fix the direction ordered list, fix the details dl list, fix the aside section, give the svg icons in the header area a hover element, and add the home logo and sign in logos at the top of the header. */
