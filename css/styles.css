@@ -422,6 +422,11 @@ footer p {
         width: 768px;
     }
 
+    main {
+        display: grid;
+    
+    }
+
     h1 {
         text-align: left;
         padding: 8px;
@@ -431,9 +436,10 @@ footer p {
     #sign-in {
         margin-left: 360px;
     }
-
+    
     .details {
-        margin: 20px 0;
+        padding: 10px;
+        grid-column: span 2;
     }
 
     .details dl {
@@ -444,15 +450,24 @@ footer p {
 
     }
 
-    .ingredients h2 {
-        text-align: left;
+    .ingredients {
+        grid-column: 1;
+        grid-row: 2;
     
     }
 
-    .directions ol {
-        display: grid;
-    
+    .ingredients h2 {
+        text-align: left;
     }
+
+    .directions {
+        display: grid;
+        grid-column: 2;
+        grid-row: 2;
+        
+        
+    }
+
 
     .dish {
         display: grid;
