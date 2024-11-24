@@ -426,4 +426,74 @@ footer p {
         text-align: left;
         padding: 8px;
     }
+
+
+    #sign-in {
+        margin-left: 360px;
+    }
+
+    .details {
+        margin: 20px 0;
+    }
+
+    .details dl {
+        display: grid;
+        align-items: center;
+        gap: 8px 16px;
+        margin-left: 250px;
+
+    }
+
+    .ingredients h2 {
+        text-align: left;
+    
+    }
+
+    .directions ol {
+        display: grid;
+    
+    }
+
+    .dish {
+        display: grid;
+    }
+
+    .side-dishes {
+        display: grid;
+        
+    }
+
+    .dishes-grid {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        padding: 20px 0;
+        
+    }
+
+    footer ul {
+        margin-right: 20px;
+
+    }
+
+
+    footer img {
+        width: 150px;
+        margin-left: 50px;
+       
+    }
+
+    footer p {
+        text-align: left;
+        margin-left: 80px
+        
+    }
+
+    
 }
+/* Before proceeding to the last viewport, make sure to fix the directions list to be near the ingredients, fix the aside section, fix the footer section, add a blur filter around the top of the page like the one in the mockup, and fix the navigation on top of the page including the SVG icons. */
