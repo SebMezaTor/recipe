@@ -432,6 +432,13 @@ footer p {
         padding: 8px;
     }
 
+    .search-bar {
+        display: flex;
+        
+        
+
+    }
+
 
     #sign-in {
         margin-left: 360px;
