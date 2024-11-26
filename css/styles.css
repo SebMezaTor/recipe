@@ -426,11 +426,13 @@ footer p {
         display: grid;
     
     }
+
     /* Changed padding from 8px to 10 for the h1 (medium viewport)*/
     h1 {
         text-align: left;
-        padding: 10px;
+        padding-top: 30px;
     }
+
 
     .search-bar {
         display: flex;
@@ -440,8 +442,46 @@ footer p {
         
     }
 
+
+    
+    /* For the nav, the nav link and image all have a hover. */
+
+    
+    nav {
+        min-width: 4px;
+        height: 4px;
+    }
+        
+     
+    nav ul {
+        overflow: visible;
+        max-height: 50px;
+        max-width: 50px;
+        display: flex;
+        position: absolute;
+        top: 0px;
+        
+    }
+        
+     
+    nav li img {
+        visibility: visible;
+        display: inline-block;
+        width: 50px;
+        object-fit: cover;
+
+    }
+
+    nav li a {
+        display: block;
+        padding-top: 70px;
+        
+
+    }
+
     nav label {
         display: none;
+        
     }
 
     nav label span {
