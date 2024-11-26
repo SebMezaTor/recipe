@@ -440,6 +440,26 @@ footer p {
         
     }
 
+    nav label {
+        display: none;
+    }
+
+    nav label span {
+        display: none;
+    }
+
+    nav label svg {
+        display: none;
+    }
+
+    label span:before, label span:after {
+        display: none;
+    }
+
+    nav input {
+        display: none;
+    }
+
     
     #sign-in {
         margin-left: 360px;
