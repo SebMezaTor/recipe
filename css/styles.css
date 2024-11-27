@@ -428,9 +428,10 @@ footer p {
     }
 
     /* Changed padding from 8px to 10 for the h1 (medium viewport)*/
+    /* Added a padding-top to the h1 to push it down a little bit to make room for the nav width. It was 30 previously.*/
     h1 {
         text-align: left;
-        padding-top: 30px;
+        padding-top: 55px;
     }
 
 
@@ -442,14 +443,15 @@ footer p {
         
     }
 
-
-    
-    /* For the nav, the nav link and image all have a hover. */
+/* For the nav, the nav link and image all have a hover. */
+/* Gave the nav a min width of 72% and 11% for the height */
+/* The nav li a has a padding top of 70px for now as it was the only thing I can think of to bring the links down until I can figure out how to fix the search bar as its currently behind the nav min-width and height. */
 
     
     nav {
-        min-width: 4px;
-        height: 4px;
+        min-width: 73%;
+        height: 12%
+
     }
         
      
@@ -460,6 +462,7 @@ footer p {
         display: flex;
         position: absolute;
         top: 0px;
+        
         
     }
         
@@ -473,10 +476,10 @@ footer p {
     }
 
     nav li a {
-        display: block;
+        display: inline-block;
         padding-top: 70px;
         
-
+        
     }
 
     nav label {
@@ -579,4 +582,4 @@ footer p {
 
     
 }
-/* Before proceeding to the last viewport, make sure to fix the directions list to be near the ingredients, fix the aside section, fix the footer section, add a blur filter around the top of the page like the one in the mockup, and fix the navigation on top of the page including the SVG icons. */
+/* Before proceeding to the last viewport (1280px), make sure to fix the directions list to be near the ingredients, fix the aside section, fix the footer section, add a blur filter around the top of the page like the one in the mockup, add the navigation min-width/height like in the mockup, and fix the navigation on top of the page including the SVG icons. */
