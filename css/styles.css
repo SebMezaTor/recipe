@@ -431,16 +431,19 @@ footer p {
     /* Added a padding-top to the h1 to push it down a little bit to make room for the nav width. It was 30 previously.*/
     h1 {
         text-align: left;
-        padding-top: 55px;
+        padding-top: 80px;
+        padding-left: 15px;
     }
 
-
+    /* The search bar needed a Z-index to be positioned on top of the navigation. It was hiding behind the navigation width and height. */
     .search-bar {
+        position: absolute;
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 10;
         display: flex;
-        margin: 0 auto;
-        top: 8px;
-        margin-left: 299px;
-        
+        gap: 5px;
     }
 
 /* For the nav, the nav link and image all have a hover. */
@@ -452,6 +455,7 @@ footer p {
     nav {
         min-width: 30%;
         height: 14%;
+        
 
     }
         
@@ -476,15 +480,16 @@ footer p {
 
     }
     /* the nav li a was a display of inline-block */
+    /* Added a position of relative and a top of 80px to the nav li a. My reasoning for this is because when I originally added a padding-top, the links were pushed down which was what I wanted but the sign in svg icon was also pushed and I didn't want it to be affected. */
     nav li a {
-        display: inline-block;
-        padding-top: 70px;
-        
+        position: relative;
+        top: 80px;
         
     }
-
+    /* The nav below this point is completed, all of them only need a none */
     nav label {
         display: none;
+        
         
     }
 
@@ -507,6 +512,7 @@ footer p {
     
     #sign-in {
         margin-left: 360px;
+        
     }
     
     .details {
