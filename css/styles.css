@@ -444,13 +444,14 @@ footer p {
     }
 
 /* For the nav, the nav link and image all have a hover. */
-/* Gave the nav a min width of 72% and 11% for the height */
+/* Gave the nav a min width of 72% and 11% for the height. */
 /* The nav li a has a padding top of 70px for now as it was the only thing I can think of to bring the links down until I can figure out how to fix the search bar as its currently behind the nav min-width and height. */
+/* I changed the min-width of the nav to 30% and the height to 15% as I noticed that in the browser, it looks more accurate than the live preview. */
 
     
     nav {
-        min-width: 73%;
-        height: 12%
+        min-width: 30%;
+        height: 14%;
 
     }
         
@@ -474,7 +475,7 @@ footer p {
         object-fit: cover;
 
     }
-
+    /* the nav li a was a display of inline-block */
     nav li a {
         display: inline-block;
         padding-top: 70px;
