@@ -468,8 +468,6 @@ footer p {
         position: absolute;
         top: 0px;
         
-        
-        
     }
         
      
@@ -517,6 +515,14 @@ footer p {
         font-weight: bold;
         
         
+    }
+
+    #logo {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        height: auto;
+        z-index: 10;
     }
 
 
