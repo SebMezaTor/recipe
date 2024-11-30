@@ -451,11 +451,12 @@ footer p {
 /* The nav li a has a padding top of 70px for now as it was the only thing I can think of to bring the links down until I can figure out how to fix the search bar as its currently behind the nav min-width and height. */
 /* I changed the min-width of the nav to 30% and the height to 15% as I noticed that in the browser, it looks more accurate than the live preview. */
 /* The Nav min width was set to 30% previously and is now set to 100%. The reason why I had to change this is because when I would check the website using the developer tools for chrome, the min-width was far too short, so I changed it to 100% to fill in the rest of the space.*/
+/* Change the min width and height for the nav in px rather than percentage. */
 
     
     nav {
-        min-width: 100%;
-        height: 14%;
+        min-width: 767px;
+        height: 187px;
         
 
     }
@@ -481,9 +482,12 @@ footer p {
     }
     /* the nav li a was a display of inline-block */
     /* Added a position of relative and a top of 80px to the nav li a. My reasoning for this is because when I originally added a padding-top, the links were pushed down which was what I wanted but the sign in svg icon was also pushed and I didn't want it to be affected. */
+    /* Added a boldness to the nav li a selector as well as the font size for the nav li a, */
     nav li a {
         position: relative;
         top: 80px;
+        font-size: 19px;
+        font-weight: bold;
         
     }
     /* The nav below this point is completed, all of them only need a none */
@@ -524,6 +528,14 @@ footer p {
         left: 0px;
         height: auto;
         z-index: 10;
+    }
+
+    menu {
+        padding-top: 20px;
+        background-color: rgba(128,128,128,0.3);
+        backdrop-filter: blur(5px);
+        
+        
     }
 
 
@@ -606,88 +618,16 @@ footer p {
 /* Before proceeding to the last viewport (1280px), make sure to fix the directions list to be near the ingredients, fix the aside section, fix the footer section, add a blur filter around the top of the page like the one in the mockup, add the navigation min-width/height like in the mockup, and fix the navigation on top of the page including the SVG icons. */
 /* The only thing left to do for the medium viewport is to add the blur that is around the svg icons. */
 
-@media screen and (min-width: 1280px) {
-    body {
-        width: 1280px;
-    }
 
-    h1 {
-        text-align: center;
-        padding-bottom: 10px;
-    
-    }
 
     
 
     
     /* Fix the sign in later */
-    #sign-in {
-        margin-left: 730px;
-    }
+    
 
-    nav {
-        height: 8%;
-    }
-
-    nav ul {
-        width: 80%;
-        margin-top: -10px;
-        margin-left: 100px;
-        justify-content: space-between;
-        padding: 0;
-    }
-
-    nav li a {
-        position: relative;
-        top: 0px;
-        left: 0px;
-    }
-
-    #logo {
-        height: 83px;
-        width: 75px;
-        margin-right: 90px;
-        position: absolute;
-    }
-
-    menu {
-        display: block;
-        width: fit-content;
-        height: 600px;
-        border: 2px solid #EB5428;
-        
-    }
     /* No floats were used, remember that. */
     /* I think you have to add a div for the paragraph tag that introduces the concept street tacos. */
-    header img {
-        width: 35%;
-    }
-
-    main {
-        display: block;
-    }
-
-    .dishes-grid {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        gap: 10px;
-    }
-
-    .search-bar {
-        top: 150px;
-        justify-content: center;
-        margin-left: 80px;
-    }
-
-    .details {
-        color: #7ABFBF;
-        background-color: #000000;
-    }
-
-    footer {
-        justify-content: space-between;
-    }
+    
 
     /* The end of the code */
-}
