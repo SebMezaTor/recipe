@@ -614,7 +614,10 @@ footer p {
     h1 {
         text-align: center;
         padding-bottom: 10px;
+    
     }
+
+    
 
     
     /* Fix the sign in later */
@@ -656,7 +659,9 @@ footer p {
     }
     /* No floats were used, remember that. */
     /* I think you have to add a div for the paragraph tag that introduces the concept street tacos. */
-    
+    header img {
+        width: 35%;
+    }
 
     main {
         display: block;
