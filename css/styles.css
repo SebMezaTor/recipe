@@ -633,12 +633,14 @@ footer p {
 
     header {
         display: flex;
+        flex-direction: row;
+        padding-bottom: 0px;
     }
 
 
 
     header img {
-        width: 35%;
+        width: 30%;
         margin-right: 140px;
         
     }
