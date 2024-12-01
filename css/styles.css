@@ -532,8 +532,6 @@ footer p {
 
     menu {
         padding-top: 20px;
-        background-color: rgba(128,128,128,0.3);
-        backdrop-filter: blur(5px);
         
         
     }
@@ -617,7 +615,98 @@ footer p {
 }
 /* Before proceeding to the last viewport (1280px), make sure to fix the directions list to be near the ingredients, fix the aside section, fix the footer section, add a blur filter around the top of the page like the one in the mockup, add the navigation min-width/height like in the mockup, and fix the navigation on top of the page including the SVG icons. */
 /* The only thing left to do for the medium viewport is to add the blur that is around the svg icons. */
+@media screen and (min-width: 1280px) {
+    body {
+        width: 1280px;
+    }
 
+    main {
+        display: block;
+    }
+
+    h1 {
+        text-align: center;
+        margin-top: 40px;
+        display: inline-block;
+        
+    }
+
+    header {
+        display: flex;
+    }
+
+
+
+    header img {
+        width: 35%;
+        margin-right: 140px;
+        
+    }
+
+    nav {
+        min-width: 1280px;
+        height: 129px;
+    }
+
+    nav ul {
+        justify-content: space-between;
+        
+
+    }
+
+    nav li a {
+        position: relative;
+        margin-right: 20px;
+        top: 10px;
+        left: 200px;
+        
+    }
+
+    #logo {
+        position: absolute;
+        height: 123px;
+        width: 90px;
+    }
+
+
+    #sign-in {
+        margin-left: 880px;
+
+    }
+
+    .search-bar {
+        top: 190px;
+        justify-content: center;
+        margin-right: 89px;
+
+    }
+
+    menu {
+        display: block;
+        width: fit-content;
+        border: 2px solid #EB5428;
+        height: 600px;
+
+    }
+
+    #intro {
+        display: block;
+    }
+
+    .details {
+        color: #7ABFBF;
+        background-color: #000000;
+        
+        
+    }
+
+    .details dl {
+        display: flex;
+        position: relative;
+    }
+
+    
+}
 
 
     
