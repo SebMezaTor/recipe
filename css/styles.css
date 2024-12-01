@@ -632,8 +632,7 @@ footer p {
     }
 
     header {
-        display: flex;
-        flex-direction: row;
+        display: grid;
         padding-bottom: 0px;
     }
 
@@ -682,12 +681,17 @@ footer p {
         margin-right: 89px;
 
     }
-
+    /* Added static position to the menu */
+    /* Changed the width from fit content to 120px*/
+    /* Height was 600px*/
+    /* Added a grid area of menu for the menu*/
     menu {
         display: block;
-        width: fit-content;
+        position: static;
+        width: 120px;
         border: 2px solid #EB5428;
         height: 600px;
+        
 
     }
 
