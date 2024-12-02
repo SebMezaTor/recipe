@@ -712,17 +712,33 @@ footer p {
         color: #7ABFBF;
         background-color: #000000;
         
-        
     }
 
-    
-
-    
-
-    .directions ol {
-        display: grid;
-        
+    .definition-list dl {
+        margin: auto;
     }
+
+    #facts {
+        grid-template-columns: .5fr 2fr;
+        grid-template-rows: .2fr 1fr;
+    }
+
+    .definition-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        justify-items: center;
+    }
+
+    .definition-list dl {
+        margin: auto;
+    }
+
+    .definition-list dt, .definition-list dd {
+        display: block;
+        text-align: center;
+    }
+        
 
     /* This is a list of the different classes I have for the side dishes: aside class of side-dishes, a div class of dishes-grid, a div class of dish, and a div class of description-dish. */
 
