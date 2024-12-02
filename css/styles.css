@@ -623,26 +623,24 @@ footer p {
     main {
         display: block;
     }
-
+    /* Added grid area for the h1*/
     h1 {
         text-align: center;
         margin-top: 40px;
         display: inline-block;
+        grid-area: h1;
+        
         
     }
 
     header {
         display: grid;
-        padding-bottom: 0px;
-    }
-
-
-
-    header img {
-        width: 30%;
-        margin-right: 140px;
+        grid-template-areas:
+        "h1 h1 h1"
+        "menu tacos intro";
         
     }
+
 
     nav {
         min-width: 1280px;
@@ -690,13 +688,24 @@ footer p {
         position: static;
         width: 120px;
         border: 2px solid #EB5428;
-        height: 600px;
-        
+        height: 680px;
+        grid-area: menu;
 
     }
-
+     /*Added a grid area for the intro*/
+     /*Add a grid area to this id*/
     #intro {
         display: block;
+        grid-area: intro;
+        
+        
+    }
+    /*This is the new ID I created for the street tacos image to position the header for this viewport.*/
+    /* Added a grid area that matches the header grid area.*/
+    #tacos {
+        width: 100%;
+        grid-area: tacos;
+
     }
 
     .details {
@@ -708,21 +717,43 @@ footer p {
 
     .details dl {
         display: flex;
-        position: relative;
+    }
+
+    .details dd {
+        display: inline-block;
+    }
+
+    .details dt {
+        display: block;
     }
 
     
+
+    .directions ol {
+        display: grid;
+        
+    }
+
+    /* This is a list of the different classes I have for the side dishes: aside class of side-dishes, a div class of dishes-grid, a div class of dish, and a div class of description-dish. */
+
+    .dishes-grid {
+    display: flex;
+    justify-content: space-between;
+
+    }
+
+    .dish {
+      display: block;
+    }
+
+
+    .dish img {
+        width: 200px;
+    }
+
+    
+    /* No floats were used for the images.*/
+    /* Fix the sign in icon when you get the chance.*/
+    /*The end of the code.*/
+    
 }
-
-
-    
-
-    
-    /* Fix the sign in later */
-    
-
-    /* No floats were used, remember that. */
-    /* I think you have to add a div for the paragraph tag that introduces the concept street tacos. */
-    
-
-    /* The end of the code */
