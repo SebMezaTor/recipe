@@ -715,17 +715,7 @@ footer p {
         
     }
 
-    .details dl {
-        display: flex;
-    }
-
-    .details dd {
-        display: inline-block;
-    }
-
-    .details dt {
-        display: block;
-    }
+    
 
     
 
