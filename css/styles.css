@@ -713,9 +713,12 @@ footer p {
         background-color: #000000;
         
     }
+    /* This is the part of the definition list where I struggled as well. I managed to get them to be horizontal like in the mockup but I couldn't figure out how to move the dt tags on top of the dd tags.*/
+    /* Never mind, all I had to do was add a display of block to the dl. */
 
     .definition-list dl {
         margin: auto;
+        display: block;
     }
 
     #facts {
@@ -738,7 +741,11 @@ footer p {
         display: block;
         text-align: center;
     }
-        
+     /* I couldn't figure out how to push the directions list up, the only time I was able to push it up was when I added a div to the directions and ingredients list. When things looked alright, I was checking my other viewports and noticed that I had disorganized the direction list for every other viewport so I had to remove the divs so it wouldn't impact the other viewport. */
+    .directions {
+        display: grid;
+    
+    }
 
     /* This is a list of the different classes I have for the side dishes: aside class of side-dishes, a div class of dishes-grid, a div class of dish, and a div class of description-dish. */
 
@@ -755,6 +762,19 @@ footer p {
 
     .dish img {
         width: 200px;
+    }
+
+    footer {
+        justify-content: space-between;
+    }
+
+    footer ul {
+        width: 60%;
+    }
+
+    footer img {
+        margin: 10px;
+        width: 300px;
     }
 
     
